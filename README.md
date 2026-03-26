@@ -250,6 +250,10 @@ I'm **Bibek Das** — AI & Backend Developer, Flutter + Deep Learning Enthusiast
 > ⭐ **Star this repo** and **[subscribe on YouTube](https://youtube.com/@be-bibek)** to follow the FastAPI + Flutter build next!
 
 ---
+## 🙏 Acknowledgment
+
+This project is based on learning materials from NVIDIA Deep Learning Institute (DLI).  
+The original implementation was extended with production-grade architecture, improved training pipeline, and deployment-ready design.
 
 ## 📄 License
 
