@@ -1,0 +1,27 @@
+# configs/train_config.yaml
+# All hyperparameters and paths are set here.
+# The training script reads from this file — no magic numbers in code.
+
+data:
+  train_dir: "data/train"
+  valid_dir: "data/valid"
+  img_size: 28
+  in_channels: 1          # 1 = grayscale, 3 = RGB
+  num_workers: 2
+
+model:
+  num_classes: 24
+  channel_list: [32, 64, 128, 256]
+  fc_dropout: 0.5
+
+training:
+  epochs: 30
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 7             # early stopping patience
+
+output:
+  checkpoint_dir: "checkpoints"
+  checkpoint_name: "best_asl_model.pt"
+  log_file: "logs/training.log"
